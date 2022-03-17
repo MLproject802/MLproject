@@ -8,6 +8,6 @@ dataset=torchvision.datasets.CelebA(
              transforms.ToTensor(), transforms.Normalize((0.5,0.5,0.5),(0.5,0.5,0.5))]
         ),download=True
     )<br>
-<h2>Condition GAN 2</h2>
+<h2>Condition GAN </h2>
 待解决的问题：<br>
 1.提取celebA库中图片的特征作为label
