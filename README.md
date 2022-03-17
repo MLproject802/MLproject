@@ -1,6 +1,6 @@
 # MLproject
-datasetprepare
-collect celebA
+datasetprepare<br>
+collect celebA<br>
 dataset=torchvision.datasets.CelebA(
         root="celeba",split='train',
         transform=transforms.Compose(
