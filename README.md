@@ -24,7 +24,7 @@ the attributes and the landmarks have been pushed<br>
 - 人脸数据集升级：
   - https://github.com/switchablenorms/CelebAMask-HQ
   - 语义分割下对于原图的编辑，在最后的关联仓库中有专做人脸语义分割的部分：https://github.com/zllrunning/face-parsing.PyTorch
-  - 相关介绍：https://zhuanlan.zhihu.com/p/52188519
+  - derived dataset相关介绍：https://zhuanlan.zhihu.com/p/52188519
 - 
 
 
