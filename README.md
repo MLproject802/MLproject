@@ -19,6 +19,10 @@ the attributes and the landmarks have been pushed<br>
 
 ---
 
+## 语义分割使用方法
+
+https://notes.sjtu.edu.cn/s/sCxuC8AAt
+
 ## 相关仓库
 也许可以参考：
 - 人脸数据集升级：
