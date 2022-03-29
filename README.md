@@ -15,7 +15,8 @@ the attributes and the landmarks have been pushed<br>
 待解决的问题：<br>
 1.提取celebA库中图片的特征作为label
 
-
+<h2>Usage</h2>
+please use "python train.py --name label2city_512p --resize_or_crop scale_width_and_crop --label_feat" to train the model<br>
 
 ---
 
