@@ -18,6 +18,8 @@ the attributes and the landmarks have been pushed<br>
 <h2>Usage</h2>
 please use "python train.py --name label2city_512p --resize_or_crop scale_width_and_crop --label_feat" to train the model<br>
 
+- 原pix2pixHD命令 `CUDA_VISIBLE_DEVICES=0 python train.py --name faceOrigin100 --label_nc 19 --loadSize 512 --dataroot ./datasets/faceOrigin100/ --label_feat`
+
 ---
 
 ## 语义分割使用方法
