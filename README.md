@@ -18,7 +18,27 @@ the attributes and the landmarks have been pushed<br>
 <h2>Usage</h2>
 please use "python train.py --name label2city_512p --resize_or_crop scale_width_and_crop --label_feat" to train the model<br>
 
-- 原pix2pixHD命令 `CUDA_VISIBLE_DEVICES=0 python train.py --name faceOrigin100 --label_nc 19 --loadSize 512 --dataroot ./datasets/faceOrigin100/ --label_feat`
+【parsed】
+
+- 训练： 
+   ```shell
+   CUDA_VISIBLE_DEVICES=0 python train.py --name faceIm --label_nc 19 --loadSize 512 --dataroot ./datasets/faceOriginIm/ --label_feat
+   ```
+   
+- 测试：
+   ```shell
+   # 先生成目标图片feature，实验名需要同名
+   python encode_features.py --name faceIm_feat --dataroot ./datasets/faceOriginT/ --label_nc 19 --loadSize 512 --label_feat --load_pretrain ./checkpoints/faceOriginIm/
+   
+   # pretrain模型要放在同名的/chechpoints/下面，会自动检索
+   cp ./checkpoints/faceOriginIm/latest_net_*.pth ./checkpoints/faceIm_feat/
+   
+   python test.py --name faceIm_feat --label_nc 19 --loadSize 512 --dataroot ./datasets/faceOriginT/ --label_feat --use_encoded_image
+   ```
+   
+- 效果：
+
+   ![image-20220411112249142](C:\Users\Anoymous Matebook\AppData\Roaming\Typora\typora-user-images\image-20220411112249142.png)
 
 ---
 
