@@ -38,7 +38,7 @@ please use "python train.py --name label2city_512p --resize_or_crop scale_width_
    
 - 效果：
 
-   ![image-20220411112249142](C:\Users\Anoymous Matebook\AppData\Roaming\Typora\typora-user-images\image-20220411112249142.png)
+   ![image-20220411112249142.png](https://s2.loli.net/2022/04/11/UuDkeL1zCxw5FqE.png)
 
 ---
 
