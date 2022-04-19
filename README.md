@@ -34,6 +34,9 @@ please use "python train.py --name label2city_512p --resize_or_crop scale_width_
    cp ./checkpoints/faceOriginIm/latest_net_*.pth ./checkpoints/faceIm_feat/
    
    python test.py --name faceIm_feat --label_nc 19 --loadSize 512 --dataroot ./datasets/faceOriginT/ --label_feat --use_encoded_image
+   
+   # latest
+   CUDA_VISIBLE_DEVICES=2 python test.py --name testfaceswap --label_nc 19 --loadSize 512 --dataroot ./datasets/faceswap/ --label_feat --random_pair 0 --load_pretrain ./checkpoints/faceswap
    ```
    
 - 效果：
